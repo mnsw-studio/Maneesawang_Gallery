@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f0f1f2">
+    <meta name="description" content="A curated gallery of logo design and visual identities by Maneesawang Studio (MNSW Studio).">
+    <title>Maneesawang Studio — Logo &amp; Identity Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__logo" href="index.html" aria-label="MSNW Studio home">
+            <span class="site-nav__logo-mark"><img src="info/mnsw-studio-logo.png" alt=""></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Open navigation menu">☰</button>
+        <ul class="site-nav__menu" id="main-menu">
+            <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+            <li><a href="gallery.html">Work</a></li>
+            <li><a href="about-contact.html">About</a></li>
+        </ul>
+    </nav>
+    <main class="home-page">
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="home-hero__identity">
+                <img class="home-hero__art" src="info/mnsw-studio-logo-black.png" alt="MNSW Studio logo design mark">
+                <p class="eyebrow">Logo design gallery</p>
+                <h1 class="home-hero__title" id="home-title">MNSW Studio</h1>
+                <p class="home-hero__description">A curated collection of logo identities and visual marks by Maneesawang Studio.</p>
+            </div>
+            <div class="home-hero__work" data-featured-work aria-label="Selected work"></div>
+            <a class="pill-link home-hero__action" href="gallery.html">Explore all work <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="site-footer__brand">
+                <a class="site-footer__identity" href="index.html"><span class="site-footer__mark"><img src="info/mnsw-studio-logo.png" alt=""></span>MSNW Studio</a>
+                <p>Personal work · Chiang Rai, Thailand</p>
+            </div>
+            <nav class="site-footer__links" aria-label="Footer navigation">
+                <span class="site-footer__label">Explore</span>
+                <a href="gallery.html">Selected work</a>
+                <a href="about-contact.html">About the archive</a>
+            </nav>
+            <div class="site-footer__contact">
+                <span class="site-footer__label">A note</span>
+                <a class="site-footer__email" href="mailto:hello@msnw.studio">hello@msnw.studio ↗</a>
+            </div>
+        </div>
+        <div class="site-footer__bottom"><span>© 2026 MSNW Studio</span><span>Personal visual archive</span></div>
+    </footer>
+    <script src="projects.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>

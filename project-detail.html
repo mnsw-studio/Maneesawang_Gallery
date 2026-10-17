@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f0f1f2">
+    <meta name="description" content="A selected identity from the personal visual archive of MSNW Studio.">
+    <title>Selected Work — MSNW Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__logo" href="index.html" aria-label="MSNW Studio home"><span class="site-nav__logo-mark"><img src="info/mnsw-studio-logo.png" alt=""></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Open navigation menu">☰</button>
+        <ul class="site-nav__menu" id="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="gallery.html" aria-current="page">Work</a></li>
+            <li><a href="about-contact.html">About</a></li>
+        </ul>
+    </nav>
+    <main class="project-detail page">
+        <a class="project-detail__back" href="gallery.html"><span aria-hidden="true">←</span> All work</a>
+        <section class="project-detail__stage" aria-labelledby="project-title">
+            <div class="project-detail__meta project-detail__meta--left">
+                <p class="project-detail__label">Project</p>
+                <h1 id="project-title" data-project-title>Loading project…</h1>
+                <p class="project-detail__type" data-project-type>Identity study</p>
+            </div>
+            <figure class="project-detail__art glass-card">
+                <img data-project-image src="content/Crown-streetLogo.png" alt="">
+            </figure>
+            <div class="project-detail__meta project-detail__meta--right">
+                <p class="project-detail__label">Year</p>
+                <p class="project-detail__year" data-project-year></p>
+                <a class="project-detail__next" data-next-project href="project-detail.html?project=kia" aria-label="View next project">Next project <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+        <p class="project-detail__error" data-project-error hidden>
+            This piece isn’t in the archive. <a href="gallery.html">Return to all work</a>.
+        </p>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="site-footer__brand">
+                <a class="site-footer__identity" href="index.html"><span class="site-footer__mark"><img src="info/mnsw-studio-logo.png" alt=""></span>MSNW Studio</a>
+                <p>Personal work · Chiang Rai, Thailand</p>
+            </div>
+            <nav class="site-footer__links" aria-label="Footer navigation">
+                <span class="site-footer__label">Explore</span>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">All work</a>
+            </nav>
+            <div class="site-footer__contact">
+                <span class="site-footer__label">A note</span>
+                <a class="site-footer__email" href="mailto:hello@msnw.studio">hello@msnw.studio ↗</a>
+            </div>
+        </div>
+        <div class="site-footer__bottom"><span>© 2026 MSNW Studio</span><span>Personal visual archive</span></div>
+    </footer>
+    <script src="projects.js"></script>
+    <script src="navigation.js"></script>
+    <script src="project-detail.js"></script>
+</body>
+</html>

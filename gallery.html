@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f0f1f2">
+    <meta name="description" content="Browse visual identities and selected pieces from MSNW Studio.">
+    <title>Work — MSNW Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__logo" href="index.html" aria-label="MSNW Studio home"><span class="site-nav__logo-mark"><img src="info/mnsw-studio-logo.png" alt=""></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Open navigation menu">☰</button>
+        <ul class="site-nav__menu" id="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="gallery.html" aria-current="page">Work</a></li>
+            <li><a href="about-contact.html">About</a></li>
+        </ul>
+    </nav>
+    <main class="page gallery-page">
+        <header class="gallery-intro">
+            <p class="eyebrow">MSNW Studio · Selected work</p>
+            <h1 class="page-title">The archive</h1>
+            <p class="page-description">A collection of identities and visual studies, gathered over time.</p>
+        </header>
+        <section class="gallery-section" aria-labelledby="collection-title">
+            <div class="gallery-section__heading">
+                <h2 id="collection-title">All work</h2>
+            </div>
+            <div class="gallery-grid" data-all-work></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="site-footer__brand">
+                <a class="site-footer__identity" href="index.html"><span class="site-footer__mark"><img src="info/mnsw-studio-logo.png" alt=""></span>MSNW Studio</a>
+                <p>Personal work · Chiang Rai, Thailand</p>
+            </div>
+            <nav class="site-footer__links" aria-label="Footer navigation">
+                <span class="site-footer__label">Explore</span>
+                <a href="index.html">Home</a>
+                <a href="about-contact.html">About the archive</a>
+            </nav>
+            <div class="site-footer__contact">
+                <span class="site-footer__label">A note</span>
+                <a class="site-footer__email" href="mailto:hello@msnw.studio">hello@msnw.studio ↗</a>
+            </div>
+        </div>
+        <div class="site-footer__bottom"><span>© 2026 MSNW Studio</span><span>Personal visual archive</span></div>
+    </footer>
+    <script src="projects.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
