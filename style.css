@@ -97,8 +97,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(94, 121, 153, .4
 }
 .site-nav__logo-mark {
     display: grid;
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     place-items: center;
     overflow: hidden;
     border: var(--card-border);
