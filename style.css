@@ -97,8 +97,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(94, 121, 153, .4
 }
 .site-nav__logo-mark {
     display: grid;
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     place-items: center;
     overflow: hidden;
     border: var(--card-border);
@@ -442,7 +442,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(94, 121, 153, .4
     body { padding: 10px 16px 22px; }
     .site-nav { min-height: 56px; }
     .site-nav__logo { gap: 8px; font-size: 14px; }
-    .site-nav__logo-mark { width: 38px; height: 38px; }
+    .site-nav__logo-mark { width: 44px; height: 44px; }
     .site-nav__logo-mark img { width: 23px; height: 23px; }
     .menu-toggle { display: block; }
     .site-nav__menu {
