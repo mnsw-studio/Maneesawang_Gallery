@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact - MNSW Studio</title>
+    <link rel="icon" type="image/png" href="info/mnsw-studio-logo.png">
+    <link rel="preload" href="font/Outfit-Regular.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="font/Outfit-Medium.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="font/Outfit-SemiBold.ttf" as="font" type="font/ttf">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-about">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="info/mnsw-studio-logo.png" alt="MNSW Studio Logo" class="logo-image">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="primary-menu">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="gallery.html" class="nav-item">Gallery</a>
+            <!-- ปุ่มเมนูสำหรับหน้า About ติดคลาส active -->
+            <a href="about.html" class="nav-item active">About & Contact</a>
+        </div>
+    </nav>
+    <!-- ส่วนเนื้อหาหลัก (Main Content) -->
+    <main class="about-section">
+        <!-- กรอบรูปโปรไฟล์รูปทรงสี่เหลี่ยมขอบมนนุ่มนวล -->
+        <div class="profile-container">
+            <div class="profile-image-wrapper">
+                <!-- เปลี่ยน path รูปภาพเป็นของคุณได้เลย -->
+                <img src="info/myself.jpg" alt="Maneesawang" class="profile-image">
+            </div>
+            <span class="sub-title">Teerawat Maneesawang</span>
+        </div>
+
+        <!-- หัวข้อหลักและคำโปรยเชิงปรัชญาการออกแบบ -->
+        <div class="bio-content">
+            <h1 class="main-title main-heading">Designing identities with clarity and character.</h1>
+            <p class="main-description">
+                A quiet digital room for thoughtful brand identities and visual studies, shaped by geometry, tone, and balance.
+            </p>
+            <a href="gallery.html" class="btn btn-primary">Browse the work <span class="arrow">&gt;</span></a>
+        </div>
+        <!-- ตารางรายละเอียดคุณลักษณะ 3 คอลัมน์ (Table-First Layout ด้วย CSS Grid) -->
+        <div class="attribute-table">
+            <div class="attr-col">
+                <span class="attr-num">01</span>
+                <h3 class="attr-title">Brand identity</h3>
+                <p class="attr-text">Distinctive marks and identity systems with a clear point of view.</p>
+            </div>
+            <div class="attr-col">
+                <span class="attr-num">02</span>
+                <h3 class="attr-title">Visual direction</h3>
+                <p class="attr-text">A considered balance of geometry, tone, and form.</p>
+            </div>
+            <div class="attr-col">
+                <span class="attr-num">03</span>
+                <h3 class="attr-title">Visual studies</h3>
+                <p class="attr-text">Independent explorations in shape, color, and composition.</p>
+            </div>
+        </div>
+    </main>
+    <script src="nav.js"></script>
+</body>
+</html>

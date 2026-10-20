@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - MNSW Studio</title>
+    <link rel="icon" type="image/png" href="info/mnsw-studio-logo.png">
+    <link rel="preload" href="font/Outfit-Regular.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="font/Outfit-Medium.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="font/Outfit-SemiBold.ttf" as="font" type="font/ttf">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-gallery">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="info/mnsw-studio-logo.png" alt="MNSW Studio Logo" class="logo-image">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="primary-menu">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="gallery.html" class="nav-item active">Gallery</a>
+            <a href="about.html" class="nav-item">About & Contact</a>
+        </div>
+    </nav>
+    <header class="gallery-header">
+        <div class="sub-title">MNSW Studio</div>
+        <h1 class="main-title">Gallery</h1>
+        <p class="description">A collection of identities and visual studies, gathered over time.</p>
+    </header>
+    
+    <!-- ส่วนพื้นที่จัดวางผลงาน (ผูก ID ไว้รอรับข้อมูลจาก JavaScript) -->
+    <main class="gallery-container">
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </main>
+
+    <!-- เรียกใช้งานไฟล์สคริปต์ JavaScript -->
+    <script src="gallery.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
