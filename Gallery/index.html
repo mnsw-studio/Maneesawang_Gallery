@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <title>Selected Work | MNSW Studio</title>
+    <meta name="description" content="Selected logo and visual identity projects by MNSW Studio.">
+    <link rel="icon" type="image/png" href="info/mnsw-studio-logo.png">
+    <link rel="preload" href="font/Outfit-Regular.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="font/Outfit-Medium.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="font/Outfit-SemiBold.ttf" as="font" type="font/ttf">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-gallery">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="info/mnsw-studio-logo.png" alt="MNSW Studio Logo" class="logo-image">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="primary-menu">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="Gallery/" class="nav-item active">Gallery</a>
+            <a href="About/" class="nav-item">About</a>
+        </div>
+    </nav>
+    <header class="gallery-header">
+        <div class="sub-title">MNSW STUDIO</div>
+        <h1 class="main-title">Selected Work</h1>
+        <p class="description">A selection of logo and visual identity projects.</p>
+    </header>
+    <main class="gallery-container">
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </main>
+    <script src="gallery.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

@@ -27,7 +27,7 @@ function renderGallery() {
     gridContainer.innerHTML = '';
     galleryData.forEach(item => {
         const itemHTML = `
-            <a href="project-detail.html?id=${item.id}" class="gallery-item">
+            <a href="ProjectDetail/?id=${item.id}" class="gallery-item">
                 <div class="image-box">
                     <img src="${item.image}" alt="${item.title}">
                 </div>
@@ -60,7 +60,7 @@ function renderProjectDetail() {
     
     // ถ้าไม่พบข้อมูลชิ้นงานนี้ ให้เด้งกลับไปหน้าแกลเลอรีหลัก
     if (currentIndex === -1) {
-        window.location.href = 'gallery.html';
+        window.location.href = '../Gallery/';
         return;
     }
 
@@ -88,7 +88,7 @@ function renderProjectDetail() {
     const btnNext = document.getElementById('btnNextProject');
     if (btnNext) {
         const nextIndex = (currentIndex + 1) % galleryData.length;
-        btnNext.href = `project-detail.html?id=${galleryData[nextIndex].id}`;
+        btnNext.href = `ProjectDetail/?id=${galleryData[nextIndex].id}`;
     }
 }
 

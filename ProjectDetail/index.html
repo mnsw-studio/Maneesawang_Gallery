@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <title>Project | MNSW Studio</title>
+    <meta name="description" content="Explore a selected design project by MNSW Studio.">
+    <link rel="icon" type="image/png" href="info/mnsw-studio-logo.png">
+    <link rel="preload" href="font/Outfit-Regular.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="font/Outfit-Medium.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="font/Outfit-SemiBold.ttf" as="font" type="font/ttf">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="info/mnsw-studio-logo.png" alt="MNSW Studio Logo" class="logo-image">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="primary-menu">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="Gallery/" class="nav-item">Gallery</a>
+            <a href="About/" class="nav-item">About</a>
+        </div>
+    </nav>
+
+    <main class="project-detail-container">
+        <a href="Gallery/" class="btn btn-secondary btn-all-work">‹ All projects</a>
+        <div class="project-meta-area">
+            <div class="project-info-block">
+                <div id="projSubTitle" class="sub-title">MNSW Studio</div>
+                <h1 id="projTitle" class="project-detail-title">Project title</h1>
+                <div class="year-label">Year</div>
+                <div id="projYear" class="year-value"></div>
+            </div>
+        </div>
+        <div class="project-image-area">
+            <img id="projImage" src="" alt="Project artwork" class="project-main-img">
+        </div>
+        <div class="project-nav-area">
+            <a id="btnNextProject" href="#" class="btn btn-secondary btn-next-project">Next project ›</a>
+        </div>
+
+    </main>
+    <footer class="footer-info project-footer">
+        <div class="footer-left">
+            <strong>Chiang Rai, Thailand</strong><br>
+            <span>19.8234, 99.7631</span>
+        </div>
+        <div class="footer-right">
+            <strong>MNSW Studio</strong><br>
+            <span>Established 2020</span>
+        </div>
+    </footer>
+    <script src="gallery.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
