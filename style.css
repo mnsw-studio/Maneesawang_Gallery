@@ -34,10 +34,10 @@
     --color-muted: #666b70;
     --color-surface: rgba(255, 255, 255, 0.78);
     --color-border: rgba(17, 17, 17, 0.08);
-    --shadow-soft: 0 5px 24px rgba(17, 17, 17, 0.06);
-    --radius-card: 20px;
+    --shadow-soft: 0 8px 24px rgba(17, 17, 17, 0.06);
+    --radius-card: 24px;
     --content-width: 1440px;
-    --page-gutter: 15px;
+    --page-gutter: 16px;
     --motion: 180ms ease;
 }
 
@@ -78,14 +78,14 @@ a {
 
 a:focus-visible {
     outline: 2px solid #111111;
-    outline-offset: 3px;
+    outline-offset: 8px;
 }
 
 /* Shared navigation */
 .navbar {
     position: fixed;
     z-index: 1000;
-    top: 10px;
+    top: 8px;
     right: 0;
     left: 0;
     display: flex;
@@ -93,15 +93,15 @@ a:focus-visible {
     align-items: center;
     justify-content: space-between;
     margin-inline: auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 .nav-logo {
     display: inline-flex;
-    width: 45px;
-    height: 45px;
-    min-width: 45px;
-    min-height: 45px;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
     flex: none;
     aspect-ratio: 1;
     align-items: center;
@@ -109,7 +109,7 @@ a:focus-visible {
     overflow: visible;
     border-radius: 999px;
     background: #0d0d0d;
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 8px 8px rgba(255, 255, 255, 0.2);
 }
 
 .logo-image {
@@ -120,16 +120,16 @@ a:focus-visible {
 
 .nav-menu {
     display: flex;
-    height: 55px;
+    height: 56px;
     align-items: center;
-    gap: 5px;
-    padding: 5px;
+    gap: 8px;
+    padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 999px;
     background: var(--color-surface);
     box-shadow: var(--shadow-soft);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
 }
 
 .nav-toggle {
@@ -139,7 +139,7 @@ a:focus-visible {
 .nav-item {
     display: inline-flex;
     width: max-content;
-    height: 45px;
+    height: 48px;
     align-items: center;
     justify-content: center;
     padding: 0 24px;
@@ -174,7 +174,7 @@ a:focus-visible {
 .sub-title {
     margin: 0;
     color: var(--color-text);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.04em;
     line-height: 1.4;
@@ -193,11 +193,11 @@ a:focus-visible {
 /* Shared buttons: consistent dimensions, different visual variants */
 .btn {
     display: inline-flex;
-    min-height: 45px;
+    min-height: 48px;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding: 0 20px;
+    gap: 5px;
+    padding: 0 24px;
     border: 1px solid transparent;
     border-radius: 999px;
     font: inherit;
@@ -222,7 +222,7 @@ a:focus-visible {
 
 .btn-primary:hover {
     background: #343434;
-    transform: translateY(-1px);
+    transform: translateY(-8px);
 }
 
 .btn-secondary {
@@ -237,11 +237,11 @@ a:focus-visible {
 .btn-secondary:hover {
     border-color: rgba(17, 17, 17, 0.14);
     background: #ffffff;
-    transform: translateY(-1px);
+    transform: translateY(-8px);
 }
 
 .arrow {
-    font-size: 11px;
+    font-size: 12px;
     opacity: 0.7;
 }
 
@@ -302,7 +302,7 @@ a:focus-visible {
     justify-content: center;
     gap: clamp(32px, 5vw, 72px);
     margin: 0 auto;
-    padding: 90px var(--page-gutter);
+    padding: 96px var(--page-gutter);
 }
 
 .hero-image-area,
@@ -319,7 +319,7 @@ a:focus-visible {
 
 .hero-3d-img {
     width: 100%;
-    max-width: 500px;
+    max-width: 504px;
     max-height: 70vh;
     object-fit: contain;
 }
@@ -336,14 +336,14 @@ a:focus-visible {
 
 .hero-text-area .description {
     max-width: 480px;
-    margin: 20px 0 28px;
+    margin: 24px 0 32px;
 }
 
 /* Gallery */
 .page-gallery {
     width: min(100%, var(--content-width));
     margin: 0 auto;
-    padding: 132px 15px 48px;
+    padding: 128px 16px 48px;
 }
 
 .gallery-header {
@@ -354,7 +354,7 @@ a:focus-visible {
 }
 
 .gallery-header .sub-title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .gallery-header .description {
@@ -370,8 +370,8 @@ a:focus-visible {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 40px 10px;
-    padding: 15px 0;
+    gap: 40px 8px;
+    padding: 16px 0;
 }
 
 .gallery-item {
@@ -391,13 +391,13 @@ a:focus-visible {
     border: 1px solid rgba(226, 232, 240, 0.8);
     border-radius: var(--radius-card);
     background: #ffffff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.025);
     transition: transform var(--motion), box-shadow var(--motion);
 }
 
 .gallery-item:hover .image-box {
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
-    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+    transform: translateY(-8px);
 }
 
 .image-box img {
@@ -416,7 +416,7 @@ a:focus-visible {
     justify-content: space-between;
     gap: 8px;
     margin-top: 12px;
-    padding: 0 4px;
+    padding: 0 8px;
 }
 
 .item-title {
@@ -431,7 +431,7 @@ a:focus-visible {
 .item-year {
     flex: 0 0 auto;
     color: #858b91;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -439,7 +439,7 @@ a:focus-visible {
 .page-about {
     width: min(100%, var(--content-width));
     margin: 0 auto;
-    padding: 124px 15px 80px;
+    padding: 128px 16px 80px;
 }
 
 .about-section {
@@ -448,7 +448,7 @@ a:focus-visible {
     max-width: var(--content-width);
     flex-direction: column;
     align-items: center;
-    gap: 44px;
+    gap: 48px;
     margin: 0 auto;
     text-align: center;
 }
@@ -457,7 +457,7 @@ a:focus-visible {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
 }
 
 .profile-image-wrapper {
@@ -488,8 +488,8 @@ a:focus-visible {
 }
 
 .bio-content .main-description {
-    max-width: 620px;
-    margin: 18px 0 24px;
+    max-width: 624px;
+    margin: 16px 0 24px;
 }
 
 .attribute-table {
@@ -501,7 +501,7 @@ a:focus-visible {
 }
 
 .attr-col {
-    padding: 24px 15px 0;
+    padding: 24px 16px 0;
 }
 
 .attr-col + .attr-col {
@@ -510,13 +510,13 @@ a:focus-visible {
 
 .attr-num {
     color: #858b91;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .attr-title {
-    margin: 12px 0 6px;
-    font-size: 18px;
+    margin: 12px 0 8px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.02em;
 }
@@ -533,11 +533,11 @@ a:focus-visible {
     width: min(100%, var(--content-width));
     min-height: 100vh;
     min-height: 100svh;
-    grid-template-columns: minmax(0, 1fr) minmax(0, min(40vw, 500px)) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, min(40vw, 504px)) minmax(0, 1fr);
     align-items: center;
     gap: clamp(24px, 4vw, 64px);
     margin: 0 auto;
-    padding: 72px 15px;
+    padding: 72px 16px;
 }
 
 .project-meta-area {
@@ -551,14 +551,14 @@ a:focus-visible {
 
 .btn-all-work {
     position: absolute;
-    top: 74px;
+    top: 72px;
     left: 50%;
     z-index: 2;
     transform: translateX(-50%);
 }
 
 .btn-all-work.btn-secondary:hover {
-    transform: translateX(-50%) translateY(-1px);
+    transform: translateX(-50%) translateY(-8px);
 }
 
 .project-info-block {
@@ -573,11 +573,11 @@ a:focus-visible {
     align-items: center;
     margin-bottom: clamp(8px, 0.84vw, 12px);
     color: #555b60;
-    font-size: clamp(10px, 0.84vw, 12px);
+    font-size: clamp(12px, 0.84vw, 14px);
 }
 
 .project-info-block .sub-title::before {
-    margin-right: 6px;
+    margin-right: 8px;
     content: "•";
     font-size: 14px;
 }
@@ -589,21 +589,21 @@ a:focus-visible {
 .project-info-block .year-label {
     margin-top: clamp(12px, 1.12vw, 16px);
     color: var(--color-muted);
-    font-size: clamp(10px, 0.77vw, 11px);
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.15em;
 }
 
 .project-info-block .year-value {
-    margin-top: 4px;
-    font-size: clamp(15px, 1.25vw, 18px);
+    margin-top: 8px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .project-detail-title {
     margin: 0;
     color: var(--color-text);
-    font-size: clamp(27px, 3.34vw, 48px);
+    font-size: clamp(24px, 3.34vw, 48px);
     font-weight: 600;
     letter-spacing: -0.045em;
     line-height: 1.05;
@@ -620,7 +620,7 @@ a:focus-visible {
 
 .project-main-img {
     width: 100%;
-    max-height: min(52vh, clamp(280px, 36vw, 500px));
+    max-height: min(52vh, clamp(280px, 36vw, 504px));
     object-fit: contain;
 }
 
@@ -638,8 +638,8 @@ a:focus-visible {
 @media (max-width: 1199px) {
     .hero-container {
         gap: 24px;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 
     .gallery-grid {
@@ -649,7 +649,7 @@ a:focus-visible {
     .project-detail-container {
         grid-template-columns:
             minmax(0, 0.85fr)
-            minmax(0, min(40vw, 420px))
+            minmax(0, min(40vw, 424px))
             minmax(0, 0.85fr);
     }
 
@@ -670,25 +670,25 @@ a:focus-visible {
     }
 
     .project-detail-title {
-        font-size: clamp(20px, 2.7vw, 32px);
+        font-size: clamp(24px, 2.7vw, 32px);
     }
 
     .project-info-block .sub-title {
-        margin-bottom: clamp(6px, 0.7vw, 8px);
-        font-size: clamp(9px, 0.8vw, 10px);
+        margin-bottom: 8px;
+        font-size: 12px;
     }
 
     .project-info-block .year-label {
-        margin-top: clamp(8px, 0.9vw, 11px);
-        font-size: 9px;
+        margin-top: 8px;
+        font-size: 12px;
     }
 
     .project-info-block .year-value {
-        font-size: clamp(13px, 1.2vw, 15px);
+        font-size: 16px;
     }
 
     .project-main-img {
-        max-height: min(45vh, clamp(240px, 34vw, 420px));
+        max-height: min(48vh, clamp(240px, 34vw, 424px));
     }
 }
 
@@ -700,7 +700,7 @@ a:focus-visible {
         min-height: 100svh;
         grid-template-columns: minmax(0, 1fr);
         gap: 24px;
-        padding: 140px 15px 100px;
+        padding: 144px 16px 96px;
     }
 
     .project-image-area,
@@ -719,7 +719,7 @@ a:focus-visible {
     }
 
     .project-detail-title {
-        font-size: clamp(27px, 10vw, 48px);
+        font-size: clamp(24px, 10vw, 48px);
     }
 
     .project-meta-area {
@@ -730,33 +730,33 @@ a:focus-visible {
         grid-column: auto;
         grid-row: auto;
         position: absolute;
-        top: 78px;
-        right: 15px;
+        top: 80px;
+        right: 16px;
         justify-content: flex-end;
     }
 
     .btn-all-work {
-        left: 15px;
-        top: 78px;
+        left: 16px;
+        top: 80px;
         transform: none;
     }
 
     .btn-all-work.btn-secondary:hover {
-        transform: translateY(-1px);
+        transform: translateY(-8px);
     }
 
     .navbar {
         top: 8px;
         width: min(100%, var(--content-width));
-        padding: 0 15px;
+        padding: 0 16px;
     }
 
     .nav-toggle {
         position: relative;
         z-index: 2;
         display: flex;
-        width: 45px;
-        height: 45px;
+        width: 48px;
+        height: 48px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -793,19 +793,19 @@ a:focus-visible {
 
     .nav-menu {
         position: absolute;
-        top: calc(100% + 10px);
+        top: calc(100% + 12px);
         right: 0;
         display: none;
-        width: min(260px, calc(100vw - 24px));
+        width: min(256px, calc(100vw - 24px));
         height: auto;
         flex-direction: column;
         align-items: stretch;
-        gap: 4px;
+        gap: 8px;
         padding: 8px;
         border: 1px solid var(--color-border);
-        border-radius: 20px;
+        border-radius: 24px;
         background: rgba(255, 255, 255, 0.96);
-        box-shadow: 0 12px 36px rgba(17, 17, 17, 0.12);
+        box-shadow: 0 12px 40px rgba(17, 17, 17, 0.12);
     }
 
     .nav-open .nav-menu {
@@ -814,15 +814,15 @@ a:focus-visible {
 
     .nav-item {
         width: 100%;
-        height: 44px;
+        height: 48px;
         justify-content: flex-start;
-        padding: 0 15px;
+        padding: 0 16px;
         font-size: 12px;
     }
 
     .main-title,
     .main-heading {
-        font-size: clamp(36px, 10vw, 48px);
+        font-size: clamp(32px, 10vw, 48px);
     }
 
     .footer-info {
@@ -833,7 +833,7 @@ a:focus-visible {
         min-height: auto;
         flex-direction: column;
         gap: 24px;
-        padding: 120px 15px 100px;
+        padding: 80px 16px 0;
     }
 
     .hero-image-area,
@@ -851,11 +851,11 @@ a:focus-visible {
     }
 
     .page-gallery {
-        padding: 104px 15px 15px;
+        padding: 104px 16px 16px;
     }
 
     .gallery-header {
-        margin-bottom: 28px;
+        margin-bottom: 32px;
     }
 
     .gallery-grid {
@@ -864,7 +864,7 @@ a:focus-visible {
 
     .item-info {
         flex-wrap: wrap;
-        gap: 2px 6px;
+        gap: 8px;
     }
 
     .item-title,
@@ -873,7 +873,7 @@ a:focus-visible {
     }
 
     .page-about {
-        padding: 104px 15px 40px;
+        padding: 104px 16px 40px;
     }
 
     .about-section {
@@ -885,7 +885,7 @@ a:focus-visible {
     }
 
     .attr-col {
-        padding: 18px 0;
+        padding: 16px 0;
     }
 
     .attr-col + .attr-col {
