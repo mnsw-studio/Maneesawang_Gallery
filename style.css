@@ -37,7 +37,7 @@
     --shadow-soft: 0 5px 24px rgba(17, 17, 17, 0.06);
     --radius-card: 20px;
     --content-width: 1440px;
-    --page-gutter: clamp(20px, 5.5vw, 80px);
+    --page-gutter: 15px;
     --motion: 180ms ease;
 }
 
@@ -341,14 +341,15 @@ a:focus-visible {
 
 /* Gallery */
 .page-gallery {
-    width: 100%;
-    padding: 132px 0 48px;
+    width: min(100%, var(--content-width));
+    margin: 0 auto;
+    padding: 132px 15px 48px;
 }
 
 .gallery-header {
     width: min(100%, 720px);
     margin: 0 auto 40px;
-    padding: 0 15px;
+    padding: 0;
     text-align: center;
 }
 
@@ -370,7 +371,7 @@ a:focus-visible {
     width: 100%;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 40px 10px;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .gallery-item {
@@ -436,12 +437,15 @@ a:focus-visible {
 
 /* About */
 .page-about {
-    padding: 124px 24px 80px;
+    width: min(100%, var(--content-width));
+    margin: 0 auto;
+    padding: 124px 15px 80px;
 }
 
 .about-section {
     display: flex;
-    width: min(100%, 1040px);
+    width: 100%;
+    max-width: var(--content-width);
     flex-direction: column;
     align-items: center;
     gap: 44px;
@@ -497,7 +501,7 @@ a:focus-visible {
 }
 
 .attr-col {
-    padding: 24px 24px 0;
+    padding: 24px 15px 0;
 }
 
 .attr-col + .attr-col {
@@ -696,7 +700,7 @@ a:focus-visible {
         min-height: 100svh;
         grid-template-columns: minmax(0, 1fr);
         gap: 24px;
-        padding: 140px 24px 100px;
+        padding: 140px 15px 100px;
     }
 
     .project-image-area,
@@ -727,7 +731,7 @@ a:focus-visible {
         grid-row: auto;
         position: absolute;
         top: 78px;
-        right: 24px;
+        right: 15px;
         justify-content: flex-end;
     }
 
@@ -743,8 +747,8 @@ a:focus-visible {
 
     .navbar {
         top: 8px;
-        width: min(calc(100% - 32px), var(--content-width));
-        padding: 0;
+        width: min(100%, var(--content-width));
+        padding: 0 15px;
     }
 
     .nav-toggle {
@@ -847,7 +851,7 @@ a:focus-visible {
     }
 
     .page-gallery {
-        padding: 104px 0 15px;
+        padding: 104px 15px 15px;
     }
 
     .gallery-header {
