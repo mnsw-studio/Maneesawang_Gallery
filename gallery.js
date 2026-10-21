@@ -1,22 +1,22 @@
 // 1. คลังฐานข้อมูลรายการผลงาน (ตรวจสอบว่าโครงสร้างมี id และ subTitle ครบถ้วนแล้ว)
 const galleryData = [
-    { id: '84th-ku', subTitle: 'Kasetsart University', image: 'image/84th KU English Primary.png', title: '[Contest] 84th Kasetsart University', year: '2026' },
-    { id: 'a', subTitle: 'MNSW STUDIO', image: 'image/A.webp', title: 'A', year: '2025' },
-    { id: 'av', subTitle: 'MNSW STUDIO', image: 'image/A&V logo.png', title: 'A&V', year: '2026' },
-    { id: 'arthur', subTitle: 'MNSW STUDIO', image: 'image/Arthur.png', title: 'Arthur', year: '2024' },
-    { id: 'bangpost', subTitle: 'MNSW STUDIO', image: 'image/Bangpost.png', title: 'Bangpost', year: '2026' },
-    { id: 'bdt', subTitle: 'MNSW STUDIO', image: 'image/BDT.png', title: 'BDT', year: '2026' },
-    { id: 'crown-street', subTitle: 'MNSW STUDIO', image: 'image/Crown-streetLogo.png', title: 'Crown street', year: '2025' },
-    { id: 'd-digital', subTitle: 'MNSW STUDIO', image: 'image/D Digital.png', title: 'D Digital', year: '2026' },
-    { id: 'fc', subTitle: 'MANEESAWANG PENNAME', image: 'image/FC.png', title: 'FC', year: '2026' },
-    { id: 'flame', subTitle: 'MNSW STUDIO', image: 'image/flame.png', title: 'flame', year: '2026' },
-    { id: 'kia', subTitle: 'MNSW STUDIO', image: 'image/KIALogo-2.png', title: 'KIA', year: '2026' },
-    { id: 'maneesawang', subTitle: 'MANEESAWANG Studio', image: 'image/Maneesawang.webp', title: 'Maneesawang Studio', year: '2024' },
-    { id: 'mass-com', subTitle: 'MNSW STUDIO', image: 'image/Mass Com.png', title: 'Mass Com', year: '2026' },
-    { id: 's', subTitle: 'MNSW STUDIO', image: 'image/S.webp', title: 'S', year: '2025' },
-    { id: 'sra', subTitle: 'MNSW STUDIO', image: 'image/Sentinel Risk Assurance.png', title: 'SRA', year: '2026' },
-    { id: 'sf', subTitle: 'MNSW STUDIO', image: 'image/SF.webp', title: 'SF', year: '2026' },
-    { id: 'wingtach', subTitle: 'MNSW STUDIO', image: 'image/Wingtach.png', title: 'Wingtach', year: '2026' }
+    { id: '84th-ku', subTitle: 'Kasetsart University', image: 'image/84th KU English Primary.png', title: '84th Kasetsart University', year: '2026' },
+    { id: 'a', subTitle: 'MNSW Studio', image: 'image/A.webp', title: 'A', year: '2025' },
+    { id: 'av', subTitle: 'MNSW Studio', image: 'image/A&V logo.png', title: 'A&V', year: '2026' },
+    { id: 'arthur', subTitle: 'MNSW Studio', image: 'image/Arthur.png', title: 'Arthur', year: '2024' },
+    { id: 'bangpost', subTitle: 'MNSW Studio', image: 'image/Bangpost.png', title: 'Bangpost', year: '2026' },
+    { id: 'bdt', subTitle: 'MNSW Studio', image: 'image/BDT.png', title: 'BDT', year: '2026' },
+    { id: 'crown-street', subTitle: 'MNSW Studio', image: 'image/Crown-streetLogo.png', title: 'Crown Street', year: '2025' },
+    { id: 'd-digital', subTitle: 'MNSW Studio', image: 'image/D Digital.png', title: 'D Digital', year: '2026' },
+    { id: 'fc', subTitle: 'Maneesawang Penname', image: 'image/FC.png', title: 'FC', year: '2026' },
+    { id: 'flame', subTitle: 'MNSW Studio', image: 'image/flame.png', title: 'Flame', year: '2026' },
+    { id: 'kia', subTitle: 'MNSW Studio', image: 'image/KIALogo-2.png', title: 'KIA', year: '2026' },
+    { id: 'maneesawang', subTitle: 'Maneesawang Studio', image: 'image/Maneesawang.webp', title: 'Maneesawang Studio', year: '2024' },
+    { id: 'mass-com', subTitle: 'MNSW Studio', image: 'image/Mass Com.png', title: 'Mass Com', year: '2026' },
+    { id: 's', subTitle: 'MNSW Studio', image: 'image/S.webp', title: 'S', year: '2025' },
+    { id: 'sra', subTitle: 'MNSW Studio', image: 'image/Sentinel Risk Assurance.png', title: 'SRA', year: '2026' },
+    { id: 'sf', subTitle: 'MNSW Studio', image: 'image/SF.webp', title: 'SF', year: '2026' },
+    { id: 'wingtach', subTitle: 'MNSW Studio', image: 'image/Wingtach.png', title: 'Wingtach', year: '2026' }
 ];
 
 // 2. ฟังก์ชันแสดงผลหน้า Gallery รวม
@@ -65,6 +65,11 @@ function renderProjectDetail() {
     }
 
     const currentProject = galleryData[currentIndex];
+    document.title = `${currentProject.title} | MNSW Studio`;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+        metaDescription.content = `${currentProject.title} — a design project by MNSW Studio.`;
+    }
 
     // จับคู่ข้อมูลไปพ่นแสดงแทนที่เครื่องหมายขีดสั้นบน HTML
     const txtSubTitle = document.getElementById('projSubTitle');
