@@ -822,10 +822,7 @@ a:focus-visible {
     }
 
     .footer-info {
-        bottom: 16px;
-        padding-right: 15px;
-        padding-left: 15px;
-        font-size: 10px;
+        display: none;
     }
 
     .hero-container {
