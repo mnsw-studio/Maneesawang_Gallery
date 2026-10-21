@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About & Contact - MNSW Studio</title>
+    <meta name="description" content="Meet Teerawat Maneesawang, an independent designer in Chiang Rai, Thailand, creating logos, visual identities, and thoughtful graphic work.">
     <link rel="icon" type="image/png" href="info/mnsw-studio-logo.png">
     <link rel="preload" href="font/Outfit-Regular.ttf" as="font" type="font/ttf">
     <link rel="preload" href="font/Outfit-Medium.ttf" as="font" type="font/ttf">
@@ -27,43 +28,108 @@
             <a href="about.html" class="nav-item active">About & Contact</a>
         </div>
     </nav>
-    <!-- ส่วนเนื้อหาหลัก (Main Content) -->
     <main class="about-section">
-        <!-- กรอบรูปโปรไฟล์รูปทรงสี่เหลี่ยมขอบมนนุ่มนวล -->
-        <div class="profile-container">
-            <div class="profile-image-wrapper">
-                <!-- เปลี่ยน path รูปภาพเป็นของคุณได้เลย -->
-                <img src="info/myself.jpg" alt="Maneesawang" class="profile-image">
+        <section class="about-hero" aria-labelledby="about-title">
+            <div class="about-copy">
+                <p class="sub-title">Independent designer · Chiang Rai, Thailand</p>
+                <h1 class="about-title" id="about-title">Thoughtful logos and visual identities, made with character.</h1>
+                <p class="about-intro">
+                    I’m Teerawat Maneesawang. My interest in design began with making graphics and posters in Photoshop. Later, I started creating logos in Illustrator and found the kind of work I love most: shaping a visual idea into a clear, memorable mark.
+                </p>
+                <p class="about-intro">
+                    I especially enjoy refreshing existing logos and developing ideas from references. Whether you’re starting with a rough thought or something ready for a new direction, I’m open to working with individuals, businesses, and teams.
+                </p>
+                <div class="about-actions">
+                    <a href="gallery.html" class="btn btn-primary">Explore my work <span class="arrow">&gt;</span></a>
+                    <a href="mailto:artmnsw@gmail.com" class="btn btn-secondary">Get in touch</a>
+                </div>
             </div>
-            <span class="sub-title">Teerawat Maneesawang</span>
-        </div>
+            <figure class="about-profile">
+                <div class="profile-image-wrapper">
+                    <img src="info/myself.jpg" alt="Teerawat Maneesawang" class="profile-image">
+                </div>
+                <figcaption>
+                    <strong>Teerawat Maneesawang</strong>
+                    <span>MNSW Studio · Chiang Rai, Thailand</span>
+                </figcaption>
+            </figure>
+        </section>
 
-        <!-- หัวข้อหลักและคำโปรยเชิงปรัชญาการออกแบบ -->
-        <div class="bio-content">
-            <h1 class="main-title main-heading">Designing identities with clarity and character.</h1>
-            <p class="main-description">
-                A quiet digital room for thoughtful brand identities and visual studies, shaped by geometry, tone, and balance.
-            </p>
-            <a href="gallery.html" class="btn btn-primary">Browse the work <span class="arrow">&gt;</span></a>
-        </div>
-        <!-- ตารางรายละเอียดคุณลักษณะ 3 คอลัมน์ (Table-First Layout ด้วย CSS Grid) -->
-        <div class="attribute-table">
-            <div class="attr-col">
-                <span class="attr-num">01</span>
-                <h3 class="attr-title">Brand identity</h3>
-                <p class="attr-text">Distinctive marks and identity systems with a clear point of view.</p>
+        <section class="about-services" aria-labelledby="services-title">
+            <div class="about-section-heading">
+                <p class="sub-title">What I do</p>
+                <h2 id="services-title">Design support for ideas at every stage.</h2>
             </div>
-            <div class="attr-col">
-                <span class="attr-num">02</span>
-                <h3 class="attr-title">Visual direction</h3>
-                <p class="attr-text">A considered balance of geometry, tone, and form.</p>
+            <div class="about-service-grid">
+                <article class="about-service">
+                    <span class="about-index">01</span>
+                    <h3>Logo design & refresh</h3>
+                    <p>Create a new mark or give an existing logo a clearer, more considered direction.</p>
+                </article>
+                <article class="about-service">
+                    <span class="about-index">02</span>
+                    <h3>Visual identity</h3>
+                    <p>Build a consistent visual foundation around a logo, from form and color to overall character.</p>
+                </article>
+                <article class="about-service">
+                    <span class="about-index">03</span>
+                    <h3>Graphic design & visual direction</h3>
+                    <p>Explore graphic ideas and visual studies that help communicate a project’s personality.</p>
+                </article>
             </div>
-            <div class="attr-col">
-                <span class="attr-num">03</span>
-                <h3 class="attr-title">Visual studies</h3>
-                <p class="attr-text">Independent explorations in shape, color, and composition.</p>
+        </section>
+
+        <section class="about-process" aria-labelledby="process-title">
+            <div class="about-section-heading">
+                <p class="sub-title">How we can work together</p>
+                <h2 id="process-title">A clear starting point, then thoughtful refinement.</h2>
+                <p class="about-section-intro">You don’t need a perfect brief. Bring a reference, an existing logo, or just an early idea.</p>
             </div>
-        </div>
+            <ol class="about-process-list">
+                <li>
+                    <span class="about-index">01</span>
+                    <h3>Share the idea</h3>
+                    <p>Tell me what you’re making and what you’d like to improve.</p>
+                </li>
+                <li>
+                    <span class="about-index">02</span>
+                    <h3>Find a direction</h3>
+                    <p>We agree on a visual direction that fits the project.</p>
+                </li>
+                <li>
+                    <span class="about-index">03</span>
+                    <h3>Design & refine</h3>
+                    <p>Develop the chosen idea and refine it together.</p>
+                </li>
+                <li>
+                    <span class="about-index">04</span>
+                    <h3>Prepare the final work</h3>
+                    <p>Receive the agreed final artwork and files for your project.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="about-contact" id="contact" aria-labelledby="contact-title">
+            <div class="about-contact-copy">
+                <p class="sub-title">Contact</p>
+                <h2 id="contact-title">Have an idea or a logo ready for a refresh?</h2>
+                <p>Tell me a little about it. We can start with a simple conversation.</p>
+            </div>
+            <div class="about-contact-links">
+                <a href="mailto:artmnsw@gmail.com">
+                    <span>Email</span>
+                    <strong>artmnsw@gmail.com</strong>
+                </a>
+                <a href="https://www.pinterest.com/maneesawang_studio" target="_blank" rel="noopener noreferrer">
+                    <span>Pinterest</span>
+                    <strong>maneesawang_studio</strong>
+                </a>
+                <a href="https://www.instagram.com/art_maneesawang" target="_blank" rel="noopener noreferrer">
+                    <span>Instagram · personal</span>
+                    <strong>@art_maneesawang</strong>
+                </a>
+            </div>
+        </section>
     </main>
     <script src="nav.js"></script>
 </body>
